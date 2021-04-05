@@ -1,0 +1,3 @@
+[submodule "components/project/iblock.form"]
+	path = components/project/iblock.form
+	url = https://github.com/MrYupi/bitrix.form.git

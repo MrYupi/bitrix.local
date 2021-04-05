@@ -1,0 +1,64 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+
+.DS_Store
+
+# исключаем все текстовые и подобные ресурсы (на нашей практике они всегда излишни)
+*.xml
+*.txt
+*.log
+*.css.map
+#Пароли
+.htpasswd
+
+
+# архивы, включая многотомные
+*.zip
+*.zip*
+*.tar
+*.tar*
+*.enc
+*.enc*
+*.gz
+*.gz*
+*.tgz
+*.tgz*
+*.sql
+*.rar
+.hg
+.ftpconfig
+*.doc
+*.docx
+*.pdf
+*.rtf
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+*.psd
+*.psb
+*.sketch
+core.*
+
+# composer
+/local/vendor
+/local/composer.lock
+/local/composer.phar
+
+# однако храним robots.txt — он нужен
+!/robots.txt
+
+# Bitrix folders
+/bitrix/
+/upload/
+/dev/
+/local/logs/
+
+# Bitrix files
