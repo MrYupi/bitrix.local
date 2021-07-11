@@ -91,10 +91,19 @@ if (!function_exists('collectStatic'))
 
 if (!function_exists('debug'))
 {
-    function debug($item)
+    function debug($item, bool $getMethods = true)
     {
         echo '<pre style="background: black; padding: 10px; color: white">';
-        print_r($item);
+        if (is_object($item) && $getMethods)
+        {
+            print_r(get_class($item));
+            print_r('<br><br>');
+            print_r(get_class_methods($item));
+        }
+        else
+        {
+            print_r($item);
+        }
         echo '</pre>';
     }
 }
